@@ -75,8 +75,10 @@ function App() {
       setCallStatus("Call ended");
     }
   };
+  
   return (
     <>
+    <div className="container">
       <div className="App">
         {/* Create Display Input */}
         <div className="display">
@@ -191,7 +193,8 @@ function App() {
         </div>
 
         {/* Display call status */}
-        <div>{callStatus}</div>
+        <div className="status">{callStatus}</div>
+      </div>
       </div>
     </>
   );
